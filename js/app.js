@@ -9,15 +9,16 @@ function calcularTotal() {
     const v2 = parseFloat(input02.value);
     
     if (isNaN(v1) || isNaN(v2)) {
-        alert('Valor 01 ou Valor 02 inválido. Digite um número.')
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `
-            <h2>TOTAL</h2>
+            <h2>Total de Compra</h2>
         <ul>      
-            <li>A compra de ${v1} para ${v2} itens resultou em: <span>R$${v1 * v2}</span></li>
+            <li>Você está adquirindo ${v2} unidade(s) com valor unitário de ${v2}.</li>
+            <li><span>Valor total da compra: R$ ${(v1 * v2).toFixed(2)}</span></li>
         </ul>
         `
     }
@@ -32,15 +33,16 @@ function desconto() {
     const desconto = (v1 * v2) / 100
     
     if (isNaN(v1) || isNaN(v2)) {
-        alert('Valor 01 ou Valor 02 inválido. Digite um número.')
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `
-            <h2>DESCONTO</h2>
+            <h2>Desconto Aplicado</h2>
         <ul>      
-            <li>Do valor da compra de ${v1} foi inserido um desconto que resultou em: <span>R$${v1 - desconto}</span></li>
+            <li>Foi aplicado um desconto de ${v2}% sobre o valor de R$${v1}.</li> 
+            <li><span>Valor final com desconto: R$ ${(v1 - desconto).toFixed(2)}</span></li>
         </ul>
         `
     }
@@ -54,15 +56,16 @@ function juros() {
     const acrescimo = (v1 * v2) / 100
     
     if (isNaN(v1) || isNaN(v2)) {
-        alert('Valor 01 ou Valor 02 inválido. Digite um número.')
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `
-            <h2>JUROS</h2>
+            <h2>Acréscimo Aplicado</h2>
         <ul>      
-            <li>O resultado do juros adicionado ao valor de ${v1} foi: <span>R$${v1 + acrescimo}</span></li>
+            <li>Foi aplicado um acréscimo de ${v2} sobre o valor de R$${v1}.</li>
+            <li><span>Valor final com juros: R$ ${(v1 + acrescimo).toFixed(2)}</span></li>
         </ul>
         `
     }
@@ -76,15 +79,16 @@ function comissao() {
 
     
     if (isNaN(v1) || isNaN(v2)) {
-        alert('Valor 01 ou Valor 02 inválido. Digite um número.')
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `
-            <h2>COMISSÃO</h2>
+            <h2>Comissão Calculada</h2>
         <ul>      
-            <li>O valor da comissão de ${v2} com base no valor da venda de  ${v1} foi: <span>R$${(v1 * v2)/100}</span></li>
+            <li>Comissão de ${v2}% sobre uma venda de R$${v1}.</li>
+            <li><span>Valor da comissão: R$ ${((v1 * v2)/100).toFixed(2)}</span></li>
         </ul>
         `
     }
@@ -98,15 +102,16 @@ function lucro() {
 
     
     if (isNaN(v1) || isNaN(v2)) {
-        alert('Valor 01 ou Valor 02 inválido. Digite um número.')
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `
-            <h2>LUCRO</h2>
+            <h2>Lucro Obtido</h2>
         <ul>      
-            <li>O valor de venda ${v1} e o valor de custo ${v2} resultou em um lucro de: <span>R$${v1 - v2}</span></li>
+            <li>Preço de venda: R$${v1} | Custo: R$${v2}</li>
+            <li><span>Resultado financeiro: R$ ${(v1 - v2).toFixed(2)}</span></li>
         </ul>
         `
     }
