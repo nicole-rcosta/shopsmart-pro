@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(9, 148, 153);
+
+}
+
+body{
+    background-color: rgb(240, 248, 248);
+}
+
+.header{
+    display: flex;
+    padding: 30px;
+    background-color: rgb(190, 235, 238);
+    margin: 20px 0 0 0;
+}
+
+.header h1{
+    margin: 0 0 0 10px;
+}
+
+.input-group{
+    margin: 20px;
+    font-size: large;
+    background-color: rgb(190, 235, 238);
+    padding: 15px;
+}
+
+.input-group input{
+    padding: 10px;
+    border: 2px solid rgb(9, 148, 153);
+    border-radius: 10px;
+}
+
+.buttons{
+
+}
