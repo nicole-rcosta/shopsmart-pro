@@ -40,7 +40,7 @@ function desconto() {
         resultado.innerHTML = `
             <h2>DESCONTO</h2>
         <ul>      
-            <li>Do valor da compra de ${v1} foi inserido um desconto de ${desconto} que resultou em: <span>R$${v1 - desconto}</span></li>
+            <li>Do valor da compra de ${v1} foi inserido um desconto que resultou em: <span>R$${v1 - desconto}</span></li>
         </ul>
         `
     }
