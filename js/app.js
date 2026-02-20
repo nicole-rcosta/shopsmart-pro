@@ -18,7 +18,7 @@ function calcularTotal() {
         resultado.innerHTML = `
             <h2>Total de Compra</h2>
         <ul>      
-            <li>Você está adquirindo ${v2} unidade(s) com valor unitário de ${v2}.</li>
+            <li>Você está adquirindo ${v2} unidade(s) com valor unitário de ${v1}.</li>
             <li><span>Valor total da compra: R$ ${(v1 * v2).toFixed(2)}</span></li>
         </ul>
         `
