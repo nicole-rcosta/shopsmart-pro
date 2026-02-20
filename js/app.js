@@ -9,6 +9,7 @@ function calcularTotal() {
     const v2 = parseFloat(input02.value);
     
     if (isNaN(v1) || isNaN(v2)) {
+        resultado.style.display = 'flex';
         resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
@@ -33,6 +34,7 @@ function desconto() {
     const desconto = (v1 * v2) / 100
     
     if (isNaN(v1) || isNaN(v2)) {
+        resultado.style.display = 'flex';
         resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
@@ -56,6 +58,7 @@ function juros() {
     const acrescimo = (v1 * v2) / 100
     
     if (isNaN(v1) || isNaN(v2)) {
+        resultado.style.display = 'flex';
         resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
@@ -79,6 +82,7 @@ function comissao() {
 
     
     if (isNaN(v1) || isNaN(v2)) {
+        resultado.style.display = 'flex';
         resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
@@ -102,6 +106,7 @@ function lucro() {
 
     
     if (isNaN(v1) || isNaN(v2)) {
+        resultado.style.display = 'flex';
         resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
     } 
     else {
