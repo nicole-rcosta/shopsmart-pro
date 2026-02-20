@@ -31,7 +31,8 @@ Botões interativos com ícones
 
 (Você pode adicionar aqui uma imagem do projeto depois)
 
-🚀 Funcionalidades
+🚀 Funcionalidades:
+
 
 🧮 Total de Compra
 

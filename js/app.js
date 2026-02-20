@@ -18,7 +18,7 @@ function calcularTotal() {
         resultado.innerHTML = `
             <h2>Total de Compra</h2>
         <ul>      
-            <li>Você está adquirindo ${v2} unidade(s) com valor unitário de R$ ${v1}.</li>
+            <li>Você está adquirindo ${v2} unidade(s) com valor unitário de R$ ${v1.toFixed(2)}.</li>
             <li><span>Valor total da compra: R$ ${(v1 * v2).toFixed(2)}</span></li>
         </ul>
         `
@@ -43,7 +43,7 @@ function desconto() {
         resultado.innerHTML = `
             <h2>Desconto Aplicado</h2>
         <ul>      
-            <li>Foi aplicado um desconto de ${v2}% sobre o valor de R$ ${v1}.</li> 
+            <li>Foi aplicado um desconto de ${v2}% sobre o valor de R$ ${v1.toFixed(2)}.</li> 
             <li><span>Valor final com desconto: R$ ${(v1 - desconto).toFixed(2)}</span></li>
         </ul>
         `
@@ -67,7 +67,7 @@ function juros() {
         resultado.innerHTML = `
             <h2>Acréscimo Aplicado</h2>
         <ul>      
-            <li>Foi aplicado um acréscimo de ${v2}% sobre o valor de R$ ${v1}.</li>
+            <li>Foi aplicado um acréscimo de ${v2}% sobre o valor de R$ ${v1.toFixed(2)}.</li>
             <li><span>Valor final com juros: R$ ${(v1 + acrescimo).toFixed(2)}</span></li>
         </ul>
         `
@@ -91,7 +91,7 @@ function comissao() {
         resultado.innerHTML = `
             <h2>Comissão Calculada</h2>
         <ul>      
-            <li>Comissão de ${v2}% sobre uma venda de R$ ${v1}.</li>
+            <li>Comissão de ${v2}% sobre uma venda de R$ ${v1.toFixed(2)}.</li>
             <li><span>Valor da comissão: R$ ${((v1 * v2)/100).toFixed(2)}</span></li>
         </ul>
         `
@@ -115,7 +115,7 @@ function lucro() {
         resultado.innerHTML = `
             <h2>Lucro Obtido</h2>
         <ul>      
-            <li>Preço de venda: R$ ${v1} | Custo: R$ ${v2}</li>
+            <li>Preço de venda: R$ ${v1.toFixed(2)} | Custo: R$ ${v2.toFixed(2)}</li>
             <li><span>Resultado financeiro: R$ ${(v1 - v2).toFixed(2)}</span></li>
         </ul>
         `
